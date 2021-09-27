@@ -16,7 +16,7 @@ class tkitRetransformer:
         self.tokenizer=tokenizer
 
 
-        self.self.self.config = Bertself.config.from_pretrained(MODEL_NAME)
+        self.config = Bertself.config.from_pretrained(MODEL_NAME)
         # tokenizer = BertTokenizer.from_pretrained(tokenizer_MODEL_NAME)
 
         self.model = AutoModel.from_pretrained(MODEL_NAME)
@@ -44,7 +44,7 @@ class tkitRetransformer:
         self.config.save_pretrained(path)
         self.tokenizer.save_pretrained(path)
         PATH=os.path.join(path,"pytorch_model.bin")
-        self.torch.save(model.state_dict(), PATH)
+        self.torch.save(self.model.state_dict(), PATH)
         print("model save to:",path)
 
 
