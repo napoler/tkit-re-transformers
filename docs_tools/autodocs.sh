@@ -3,7 +3,7 @@
 # 自动构建脚本
 # 文档 http://www.pythondoc.com/sphinx/tutorial.html
 
-
+pip install torch>=1.1.0
 #安装
 pip install -U Sphinx
 #安装主题
