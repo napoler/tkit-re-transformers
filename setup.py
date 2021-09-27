@@ -57,6 +57,7 @@ setup(
     #依赖文件
     install_requires=[
         'transformers>=4.10.0',
+        'torch>=1.1.0'
 
 
     ],
