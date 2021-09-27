@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import torch
 import torch.nn as nn
-from transformers import BertTokenizer, BertModel,Bertself.self.config,AutoModel
+from transformers import BertTokenizer, BertModel,AutoModel
 import os
 class tkitRetransformer:
     """
