@@ -7,7 +7,7 @@ import time
 # 这里是基本的信息
 
 name='tkitRetransformer'#修改包名字-
-version='0.0.0.2'+str(time.time())[:8]
+version='0.0.0.1'+str(time.time())[:8]
 description='Terry toolkit tkitRetransformer,'
 author='Terry Chan'
 author_email='napoler2008@gmail.com'
