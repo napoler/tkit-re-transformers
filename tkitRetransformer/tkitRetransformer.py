@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import torch
 import torch.nn as nn
-from transformers import BertTokenizer, BertModel,AutoModel
+from transformers import BertTokenizer, BertModel,BertConfig,AutoModel
 import os
 class tkitRetransformer:
     """
@@ -16,7 +16,7 @@ class tkitRetransformer:
         self.tokenizer=tokenizer
 
 
-        self.config = Bertself.config.from_pretrained(MODEL_NAME)
+        self.config = BertConfig.from_pretrained(MODEL_NAME)
         # tokenizer = BertTokenizer.from_pretrained(tokenizer_MODEL_NAME)
 
         self.model = AutoModel.from_pretrained(MODEL_NAME)
