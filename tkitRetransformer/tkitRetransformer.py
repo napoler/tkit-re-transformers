@@ -44,7 +44,7 @@ class tkitRetransformer:
         self.config.save_pretrained(path)
         self.tokenizer.save_pretrained(path)
         PATH=os.path.join(path,"pytorch_model.bin")
-        self.torch.save(self.model.state_dict(), PATH)
+        torch.save(self.model.state_dict(), PATH)
         print("model save to:",path)
 
 
@@ -53,4 +53,5 @@ if __name__ == "__main__":
     MODEL_NAME="uer/chinese_roberta_L-2_H-512"
     tokenizer_MODEL_NAME="clue/roberta_chinese_clue_tiny"
     tokenizer = BertTokenizer.from_pretrained(tokenizer_MODEL_NAME)
-    tkitRetransformer(MODEL_NAME,tokenizer)
+    trt=tkitRetransformer(MODEL_NAME,tokenizer)
+    trt.save()
